@@ -1,0 +1,5 @@
+.chat-input {
+  &:focus {
+    border-bottom: 2px solid $chat-green;
+  }
+}

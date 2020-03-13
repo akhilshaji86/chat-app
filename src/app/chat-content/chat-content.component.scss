@@ -1,0 +1,22 @@
+@import "./src/styles";
+
+.chat-box {
+  height: 85%;
+}
+
+.chat-input {
+  background: white;
+  border: none;
+  border-radius: 15px;
+  width: 75%;
+
+  &:focus {
+    outline: none;
+
+  }
+}
+
+.chat-input-container {
+  height: calc(15% - 20px);
+  align-items: center;
+}
