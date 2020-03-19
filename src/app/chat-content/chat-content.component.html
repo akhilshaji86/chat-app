@@ -1,5 +1,11 @@
-<div class="chat-box ">
+<div class="chat-box d-flex">
+  <div *ngIf="chats" class="chatList d-flex flex-column">
+    <div class="chatItem p-3 " *ngFor="let chat of chats">{{chat}}</div>
+  </div>
 </div>
-<div class="w-100 pl-5 d-flex justify-content-start align-content-center chat-input-container">
-  <input type="text" class="p-2 chat-input">
+<div class="w-100 pl-5 d-flex justify-content-start  chat-input-container">
+  <input type="text" class="p-2 chat-input" [(ngModel)]="chatInput">
+  <div class="send-icon align-content-center ml-1 ">
+    <i class="fa fa-paper-plane-o" (click)="sendMessage($event)" aria-hidden="true"></i>
+  </div>
 </div>

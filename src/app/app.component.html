@@ -1,24 +1,13 @@
 <div class="main-container d-flex flex-column">
   <!--header-->
-  <header class="header d-flex justify-content-center align-items-center">
-    <i class="fa fa-comments-o header-item" aria-hidden="true"></i>
-    <label class="header-item">Welcome To XMsg</label>
-  </header>
+  <app-chat-header></app-chat-header>
   <!--main part-->
   <main class="d-flex content-container">
-    <aside class="users-list">
-      <label>user list</label>
-      <app-user-list></app-user-list>
-    </aside>
+    <app-user-list class="d-flex w-20"></app-user-list>
     <article class="chat-content">
-      <label>chat content</label>
       <app-chat-content></app-chat-content>
     </article>
   </main>
   <!--footer-->
-  <footer class="d-flex footer justify-content-center">
-    <label class="d-flex">All rights &copy; reserved</label>
-    <div class="d-flex"></div>
-  </footer>
-
+  <app-chat-footer></app-chat-footer>
 </div>
