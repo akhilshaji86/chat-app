@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-@import "./src/assets/themes/default.scss";
+@import "assets/themes/default.scss";
+
 body {
   margin: 0;
   padding: 0;
@@ -9,7 +10,8 @@ body {
 label {
   margin: 0;
 }
-.w-20{
+
+.w-20 {
   width: 20%;
 }
 
